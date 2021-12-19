@@ -18,10 +18,9 @@ Swagger-url : http://hostname:port/swagger-ui/ Ex : http://localhost:8088/swagge
 
 Software & Tools:
 
-Spring Boot 2.4.0
-Java 11+
-Maven 4.0.0
-Mysql 8.0
-Hibernate 5.3
-junit 5.0/Mockito 2.1
-Swagger 2.0
+    Spring Boot 2.5.6
+    Java 11+
+    Maven 4.0.0
+    Mongodb 5.0 -community-edition
+    junit 5.0/Mockito 2.1
+    Swagger 3.0
