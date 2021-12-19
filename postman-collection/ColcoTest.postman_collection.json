@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "e70ff0d1-4782-4358-a2a9-6cc1589ab9f5",
+		"name": "ColcoTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get-all-mrep",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/MRep/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"MRep",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-mrep",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\":\"venkat\",\n       \"drugIds\" : [\n        \"61bdcdbc4f238027dbd3b194\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/MRep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"MRep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update-mrep",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"61beb94917af687122257fbf\",\n    \"name\":\"ravi\",\n    \"drugIds\" : [\n        \"61bdcdc04f238027dbd3b195\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/MRep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"MRep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-mrep",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\"61beb5f9492bc43c3bad00aaa1d\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8088/MRep",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"MRep"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "gem-mrep-details-by-id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8088/MRep/61beed705071002b9c926556",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8088",
+					"path": [
+						"MRep",
+						"61beed705071002b9c926556"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
